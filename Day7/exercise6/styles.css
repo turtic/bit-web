@@ -1,0 +1,32 @@
+.picture {
+width: 250px;
+height: 250px;
+display: block;
+}
+
+#first {
+    background-color: red;
+    opacity: 0.5;
+}
+
+#second {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.blue {
+    background-color: blue;
+}
+
+.pink {
+    background-color: hotpink;
+}
+
+table {
+    width: 100%
+}
+
+td {
+   
+    height: 100px;
+    text-align: center;
+}
