@@ -1,0 +1,48 @@
+a {
+    color: red;
+    text-shadow: 9px 5px 5px rgba(80, 90, 255, 0.3);
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active{
+    color: blue;
+}
+
+h1  {
+    font-family: "Metal Mania";
+    text-shadow: 9px 5px 0px rgba(7, 0, 0, 0.3);
+}
+
+tr:nth-child(2n+1) {
+    background-color: yellow;
+}
+
+tr:nth-child(2n+2) {
+    background-color: orange;
+}
+
+table {
+    border: 1px;
+    width:50%;
+    height:300px;
+    text-align: center;
+}
+
+#second {
+    margin-top: 30px;
+}
+
+#second td:nth-child(2n+1) {
+    background-color: red;
+}
+
+#second td:nth-child(2n+2) {
+    background-color: rgb(82, 110, 151);
+}

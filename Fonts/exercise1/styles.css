@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Pacifico-Regular";
+    src: url('assets/fonts/Pacifico-Regular.ttf')
+
+}
+
+body {
+    font-size: 16px;
+}
+
+#first {
+    font-family: "Pacifico-Regular";
+
+}
+
+#second {
+    font-family: monospace;
+    font-style: oblique;
+    
+}
+
+#third {
+    font-family: sans-serif;
+    
+}
+
+h1 {
+    font-family: 'Metal Mania', cursive;
+    text-align: center;
+    font-size: 3em;
+    color: #b70000;
+}
+
+p {
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+
+q {
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2em;
+    color: #4a4343;
+    font-family: 'Oswald', sans-serif;
+}
+
+span {
+    font-weight: 700;
+    font-style: italic;
+}

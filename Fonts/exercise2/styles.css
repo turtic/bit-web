@@ -1,0 +1,23 @@
+#first{
+   text-transform: uppercase;
+   text-decoration: underline; 
+   text-align: left;
+}
+#second{
+    text-transform: lowercase;
+    text-decoration: line-through;
+    text-align: left;
+    text-indent: 3%;
+}
+
+p {
+    width: 500px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 6px 1px 4px rgba(80, 90, 255, 0.3);
+    font-family: "Metal Mania";
+}
