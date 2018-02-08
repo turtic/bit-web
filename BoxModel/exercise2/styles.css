@@ -1,0 +1,32 @@
+
+p {
+    background-color: yellow;
+    width: 250px;
+    border: 5px;
+    border-style: solid;
+    border-color: green;
+    padding-top: 10%;
+
+
+}
+
+.reddash {
+    border-color: red;
+    border-style: dashed;
+    padding: 10%;
+    
+}
+#first { 
+    width: 300px;
+    margin: 50px;
+}
+
+#sec { 
+    width: 400px;
+    margin: auto;
+}
+
+#third { 
+    width: 200px;
+    margin-left: 50px;
+}

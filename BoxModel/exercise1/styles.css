@@ -1,0 +1,17 @@
+
+#para1 {
+    background-color: yellow;
+    width: 400px;
+    height: 60%;
+    max-height: 300px;
+}
+
+#para2 {
+    background-color: red;
+    width: 600px;
+    height: 40%;
+}
+
+p {
+    overflow: hidden;
+}
