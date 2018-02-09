@@ -1,0 +1,76 @@
+
+body {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+form {
+
+    width: 20%;
+    margin: auto;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 4%;
+    background-color: #e2d8d8;
+    margin-top: 100px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+h1 {
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-left: 9%;
+}
+span {
+    color: yellow;
+}
+
+label {
+    display: block;
+    text-align: left;
+    padding-top: 20px;
+}
+input {
+    width: 100%;
+    padding-left: 40px;
+    margin-top: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    border-radius: 6px;   
+}
+
+#name {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/1024px-User_font_awesome.svg.png);
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+}
+
+#email {
+    background-image: url(http://www.myiconfinder.com/uploads/iconsets/256-256-2551789035d03d242a37aec568dc8eea-email.png);
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+}
+
+#phone {
+    background-image: url(https://cdn2.iconfinder.com/data/icons/picons-essentials/71/mobile-512.png);
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+}
+
+#adress {
+    background-image: url(https://cdn3.iconfinder.com/data/icons/social-messaging-productivity-4/128/home2-512.png);
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+}
+
+#btn-sub {
+    width: 150px;
+    border-radius: 10px;
+    padding: 13px;
+    background-color:rgb(212, 13, 13);
+    color: #ffff;
+    margin-left: 72%;
+    margin-top: 37px;
+}
