@@ -1,19 +1,21 @@
 
-body {
-    font-family: sans-serif;
-    font-weight: bold;
-}
-form {
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background-color: #23282d;
+}
+
+form {
     width: 20%;
     margin: auto;
     padding: 1%;
-    padding-left: 2%;
-    padding-right: 4%;
-    background-color: #e2d8d8;
-    margin-top: 100px;
-    border-top-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #eeeeee;;
+    margin-top: 50px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 
 }
 h1 {
@@ -21,56 +23,73 @@ h1 {
     border-bottom-style: solid;
     text-align: center;
     padding-bottom: 20px;
-    margin-left: 9%;
+    color: #2d4155;
+    font-weight: 800;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 15px;
 }
+
 span {
-    color: yellow;
+    color: #ffbe04;
 }
 
 label {
     display: block;
     text-align: left;
     padding-top: 20px;
+    color: #2d4155;
 }
+
 input {
+    box-sizing: border-box;
     width: 100%;
     padding-left: 40px;
     margin-top: 12px;
     padding-top: 10px;
     padding-bottom: 10px; 
-    border-radius: 6px;   
+    border-radius: 6px;  
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position-y: 3px;
+    background-position-x: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dcdedf;
+    -webkit-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.5);
+}
+
+input:focus {
+    outline: 1px none red;
+    -webkit-box-shadow: 0px 0px 17px 1px rgba(224,22,22,1);
+    -moz-box-shadow: 0px 0px 17px 1px rgba(224,22,22,1);
+    box-shadow: 0px 0px 17px 1px rgba(224,22,22,1);
 }
 
 #name {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/User_font_awesome.svg/1024px-User_font_awesome.svg.png);
-    background-repeat: no-repeat;
-    background-size: 36px 36px;
 }
 
 #email {
-    background-image: url(http://www.myiconfinder.com/uploads/iconsets/256-256-2551789035d03d242a37aec568dc8eea-email.png);
-    background-repeat: no-repeat;
-    background-size: 36px 36px;
+    background-image: url(http://www.myiconfinder.com/uploads/iconsets/256-256-2551789035d03d242a37aec568dc8eea-email.png);   
 }
 
 #phone {
-    background-image: url(https://cdn2.iconfinder.com/data/icons/picons-essentials/71/mobile-512.png);
-    background-repeat: no-repeat;
-    background-size: 36px 36px;
+    background-image: url(https://cdn2.iconfinder.com/data/icons/picons-essentials/71/mobile-512.png);   
 }
 
-#adress {
+#address {
     background-image: url(https://cdn3.iconfinder.com/data/icons/social-messaging-productivity-4/128/home2-512.png);
-    background-repeat: no-repeat;
-    background-size: 36px 36px;
 }
 
 #btn-sub {
-    width: 150px;
     border-radius: 10px;
     padding: 13px;
-    background-color:rgb(212, 13, 13);
+    background-color:#c13a2b;
     color: #ffff;
-    margin-left: 72%;
-    margin-top: 37px;
+    margin-top: 50px;
+    border-style: none;
+    margin-bottom: 20px;
 }
