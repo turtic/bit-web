@@ -1,0 +1,55 @@
+div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.gold {
+    background-color: gold;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: rgb(34, 34, 146);
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+div:nth-child(6){
+    top: -100px;
+    left: 100px;
+}
+
+div:nth-child(7){
+    top: -200px;
+    left: 200px;
+}
+#group-three {
+    width: 100%;
+}
+
+#group-three div:nth-child(1) {
+    top: 0;
+    right:0;
+    z-index: 3;
+}
+
+#group-three div:nth-child(2) {
+    top: 100px;
+    right: 100px;
+    z-index: 2; 
+}
+
+#group-three div:nth-child(3) {
+    top: 200px;
+    right: 200px;
+    z-index: 1;
+}

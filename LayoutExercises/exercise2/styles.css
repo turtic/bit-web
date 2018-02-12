@@ -1,0 +1,59 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+div:nth-child(1){
+    background-color: red;
+}
+
+div:nth-child(2){
+    background-color: gold;
+}
+
+div:nth-child(3){
+    background-color: rgb(34, 34, 146);
+}
+
+div:nth-child(5){
+    position: relative;
+    background-color: red;
+}
+
+div:nth-child(6){
+    position: relative;
+    background-color: gold;
+    top: -100px;
+    left: 100px;
+}
+
+div:nth-child(7){
+    position: relative;
+    background-color: rgb(34, 34, 146);
+    top: -200px;
+    left: 200px;
+}
+
+div:nth-child(9){
+    position: absolute;
+    background-color: red;
+    right: 0px;
+    z-index: 3;
+}
+
+div:nth-child(10){
+    position: absolute;
+    background-color: gold;
+    top: 1330px;
+    right: 100px;
+    z-index: 2;
+}
+
+div:nth-child(11){
+    position: absolute;
+    background-color: rgb(34, 34, 146);
+    top: 1430px;
+    right: 200px;
+    z-index: 1;
+    margin-bottom: 100px;
+}

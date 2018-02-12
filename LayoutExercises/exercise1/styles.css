@@ -1,0 +1,63 @@
+img {
+    width: 250px;
+    height: 250px;
+}
+
+p{
+    width: 50%;
+    margin: auto;
+}
+
+/* Relative
+The first image should be positioned relatively
+Move the image 50px from the top and 100px from the left
+If image is over the text of the paragraph, add margin to the bottom of the image */
+
+
+
+img:nth-child(2) {
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+/* Absolute
+The second image should be positioned absolutely and it should appear 10px 
+from the right and 15px from the top of the edge of the browser window
+Position the third image at the bottom of the page */
+
+img:nth-child(3) {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+/* Fixed
+Add a link at the bottom of the page
+The link should bring you back to the top of the page
+Position the link in the bottom right corner of the window
+The link’s position should be fixed so that is always visible */
+
+
+
+img:nth-child(4) {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+a {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+a img {
+
+    width: 60px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
