@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+   
+}
+
+header {
+
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    list-style-type:none;
+    width: 100%;
+    padding: 0;
+
+}
+
+li {
+    border: solid 1px #dddddd;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-top: none;
+}
+
+li:nth-child(1) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: solid 1px #dddddd;
+    
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+article {
+    border: solid 1px #dddddd;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+#img-div {
+    border: solid 1px #dddddd;
+    border-radius: 10px;
+    padding: 2%;
+
+}
+
+p {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover {
+
+    background-color:#428bca;
+    color: white;
+    font-weight: bold;
+
+}
+
+@media (min-width: 768px) { 
+
+li {
+    display: inline;
+    border: none !important;
+    color: #428bca;
+
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    width: 30%;
+    text-align: left;
+}
+
+nav {
+    position: absolute;
+    width: 30%;
+    top: 21px;
+    right: 0;
+}
+
+li:hover {
+    border-radius: 5px;
+}
+
+article img {
+    width: 33%;
+    height: auto;
+}
+
+p {
+    width: 67%;
+    float: right;
+    padding-left: 15px;
+}
+
+
+
+} 
+/* Large devices (desktops, 992px and up)  */
+@media (min-width: 992px) { 
+
+    article {
+        width: 32%;
+        float: left;
+        border: none;
+    }
+
+   article:nth-child(2){
+       margin-left: 2%;
+   }
+
+   article:nth-child(3){
+       margin-left: 2%;
+    }
+
+    article img {
+        width: 100%; 
+    }
+
+    p {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+        font-size: 16px;   
+    }
+
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+
+ } 
