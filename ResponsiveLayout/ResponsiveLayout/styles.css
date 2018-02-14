@@ -7,6 +7,7 @@
 header {
 
     width: 100%;
+    position: relative;
 }
 
 h1 {
@@ -16,6 +17,7 @@ h1 {
 
 nav {
     width: 100%;
+    text-align: right;
 }
 
 ul {
@@ -101,7 +103,7 @@ h1 {
 nav {
     position: absolute;
     width: 30%;
-    top: 21px;
+    top: 0;
     right: 0;
 }
 
