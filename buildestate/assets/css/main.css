@@ -35,6 +35,11 @@ h2 {
     border-radius: 30px;
 }
 
+#readmore:hover {
+    background-color: white;
+    color: #1d6fb2;
+}
+
 nav {
     text-align: center;
     
@@ -138,6 +143,10 @@ main p {
     color: white;
 }
 
+#testimonials i {
+    color: white;
+}
+
 #contact img {
     width: 15px;
     height: auto;
@@ -186,6 +195,26 @@ main p {
     height: 133px;
 }
 
+.fa-mobile {
+    font-size: 35px !important;
+    padding-right: 10px;
+}
+
+.fa-envelope{
+    font-size: 22px !important;
+    padding-right: 7px;
+}
+
+#contact div:nth-child(3) i {
+    font-size: 49px;
+    padding: 15px;
+}
+
+#contact div:nth-child(4) i{
+    font-size: 25px;
+    padding-right: 10px;
+}
+
 #google-maps {
     width: 100%;
 }
@@ -217,6 +246,12 @@ form button {
     padding: 7px 23px;
     border-radius: 7px;
     border: 0;
+}
+
+form button:hover {
+    background-color: white;
+    color: #fd9727;
+    border: 1px solid #fd9727;
 }
 
 #form-section h2 {
@@ -278,6 +313,15 @@ footer p {
     nav li {
         background-color: transparent;
         display: inline;
+        padding-right: 10px;
+    }
+
+    nav li:hover {
+        background: white;
+        color: #376ce4;
+        padding: 10px;
+        border-radius: 10px;
+
     }
 
     nav h1 {

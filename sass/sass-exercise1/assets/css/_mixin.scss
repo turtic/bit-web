@@ -1,0 +1,21 @@
+@mixin box($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
+
+@mixin b-shadow($bshadow) {
+    -webkit-box-shadow: 10px 10px 0px 0px $bshadow;
+    -moz-box-shadow: 10px 10px 0px 0px $bshadow;
+    box-shadow: 10px 10px 0px 0px $bshadow;
+}
+
+@mixin t-shadow($tshadow) {
+   
+    text-shadow: 3px 4px 2px $tshadow;
+
+}
+@mixin f-size($a){
+    font-size: $a + px;
+}

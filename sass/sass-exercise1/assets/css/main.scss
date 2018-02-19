@@ -1,0 +1,65 @@
+@import 'var';
+
+@import 'mixin';
+
+@import 'body';
+
+p {
+    color: $primary-color;
+    text-align: $c;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+    padding-top: 108px;
+    @include f-size(20);
+}
+
+
+h1 {
+    text-align: $c;
+    color: $second-color;
+    @include f-size(30);
+    @include t-shadow(black);
+
+}
+
+div {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background-color: $second-color;
+    margin-top: 50px;
+}
+
+div { 
+    @include box (10px); 
+}
+
+div { 
+    @include b-shadow (rgb(96, 96, 238)); 
+}
+
+p { 
+    @include t-shadow(#675c5c);
+}
+
+div:nth-child(3) { 
+
+    @include b-shadow (white); 
+
+    p {
+        @include t-shadow(#bfbf0f);
+    }
+}
+
+
+
+div:nth-child(4) { 
+
+    @include b-shadow (yellow); 
+
+    p {
+        @include t-shadow(rgb(95, 95, 1));
+    }
+
+}

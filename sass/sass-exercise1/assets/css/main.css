@@ -1,0 +1,55 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #333; }
+
+p {
+  color: #333;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-weight: bold;
+  padding-top: 108px;
+  font-size: 20px; }
+
+h1 {
+  text-align: center;
+  color: #e90808;
+  font-size: 30px;
+  text-shadow: 3px 4px 2px black; }
+
+div {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  background-color: #e90808;
+  margin-top: 50px; }
+
+div {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+div {
+  -webkit-box-shadow: 10px 10px 0px 0px #6060ee;
+  -moz-box-shadow: 10px 10px 0px 0px #6060ee;
+  box-shadow: 10px 10px 0px 0px #6060ee; }
+
+p {
+  text-shadow: 3px 4px 2px #675c5c; }
+
+div:nth-child(3) {
+  -webkit-box-shadow: 10px 10px 0px 0px white;
+  -moz-box-shadow: 10px 10px 0px 0px white;
+  box-shadow: 10px 10px 0px 0px white; }
+  div:nth-child(3) p {
+    text-shadow: 3px 4px 2px #bfbf0f; }
+
+div:nth-child(4) {
+  -webkit-box-shadow: 10px 10px 0px 0px yellow;
+  -moz-box-shadow: 10px 10px 0px 0px yellow;
+  box-shadow: 10px 10px 0px 0px yellow; }
+  div:nth-child(4) p {
+    text-shadow: 3px 4px 2px #5f5f01; }
+
+/*# sourceMappingURL=main.css.map */
