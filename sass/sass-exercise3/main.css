@@ -1,0 +1,18 @@
+body {
+  color: red; }
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: green;
+  padding: 20px; }
+  a:hover {
+    color: blue; }
+  a:visited {
+    color: orange; }
+  a:active {
+    color: yellow; }
+  a .important {
+    font-weight: 700; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,20 @@
+p:nth-child(1), p:nth-child(2) {
+  width: 200px;
+  height: 250px;
+  margin: auto;
+  background-color: green;
+  margin-top: 20px;
+  box-sizing: content-box;
+  padding: 20px;
+  border: 5px solid black; }
+
+p:nth-child(2) {
+  width: 250px;
+  box-sizing: border-box; }
+
+td {
+  width: 100px;
+  background-color: greenyellow;
+  height: 25px; }
+
+/*# sourceMappingURL=css.css.map */

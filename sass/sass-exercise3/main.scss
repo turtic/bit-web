@@ -1,0 +1,25 @@
+body {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: green;
+    padding: 20px;
+    &:hover{
+        color: blue;
+    }
+    
+    &:visited {
+        color: orange;
+    }
+
+    &:active {
+        color: yellow;
+    }
+    
+    .important {
+        font-weight: 700;
+    }
+}

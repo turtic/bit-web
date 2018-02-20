@@ -1,0 +1,36 @@
+// $w: 250px;
+// $p: 20px;
+// $b: 5px;
+
+@function bit-box ($w,$p,$b){
+
+    @return $w - 2*($p + $b);
+}
+
+p:nth-child(1) {
+    width: bit-box(250px, 20px, 5px);
+    height: 250px;
+    margin: auto;
+    background-color: green;
+    margin-top: 20px;
+    box-sizing: content-box;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+p:nth-child(2) {
+    @extend p:nth-child(1);
+    width: 250px;
+    box-sizing: border-box;
+}
+
+@function columnwidth($n, $w) {
+
+    @return $w / $n; 
+
+}
+td {
+    width: columnwidth(10, 1000px);
+    background-color: greenyellow;
+    height: 25px;
+}
