@@ -1,0 +1,23 @@
+* {
+  font-family: 'Lobster', cursive;
+  text-align: center; }
+
+.row div {
+  height: 100px;
+  background-color: #e8e2e2;
+  border: 8px solid white;
+  padding-top: 25px; }
+
+.row:nth-child(1) {
+  background-color: red; }
+.row:nth-child(2) {
+  background-color: yellow; }
+.row:nth-child(3) {
+  background-color: green; }
+
+.container:nth-child(2) {
+  margin-top: 50px; }
+  .container:nth-child(2) .row div {
+    border: 1px solid white; }
+
+/*# sourceMappingURL=main.css.map */
