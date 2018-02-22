@@ -1,0 +1,147 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    float: right;
+    font-family: 'Dhurjati', sans-serif;
+}
+
+ul {
+    background-color: red;
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 3px;
+    padding: 0;
+}
+
+nav p {
+    display: inline;
+    padding: 15px;
+    line-height: 53px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* #first {
+    width: 80%;
+    height: 850px;
+    background-image: url(https://udemy-images.udemy.com/course/750x422/505208_2307_4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: auto;
+    margin-bottom: 15px; 
+} */
+
+#html-css {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 32.8%;
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: justify;
+}
+
+article img {
+    width: 100%;
+}
+
+
+/* .relative {
+
+    width: 280px;
+    height: 280px;
+    position: relative;
+    right: 0;
+
+} */
+
+#spec a {
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(68, 57, 223);
+    color: #54653e;
+}
+
+#spec {
+    background-color: #ffbe00;
+    vertical-align: top;
+    height: 550px;
+    font-size: 24px;
+    line-height: 88px;
+    margin-bottom: 50px;
+}
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #2d3e50;
+    color: white;
+    padding: 15px;
+    padding-left: 10%;
+}
+
+article {
+    height: 600px;
+}
+
+article p {
+    text-align: justify;
+}
+
+#top-div {
+    position: relative;
+}
+
+#top-div h2 {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    background-color: #1b1b3c6b;
+    width: 100%;
+    color: white;
+    font-size: 66px;
+    padding: 33px;
+}
+
+
+/* phone */
+
+@media (max-width: 575px) {
+    #top-div h2 {
+        font-size: 21px;
+        padding: 9px;
+    }
+
+    nav p {
+        display: none;
+    }
+}
+
+
+/* tablet */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #top-div h2 {
+        font-size: 61px;
+        padding: 1px;
+    }
+    nav p {
+        display: none;
+    }
+}
+
+
