@@ -5,6 +5,14 @@ nav {
   background-color: #2c3e50; }
   nav a {
     color: white !important; }
+  nav i {
+    color: white;
+    font-size: 14px !important; }
+  nav span {
+    font-size: 14px;
+    color: white;
+    line-height: 24px;
+    font-weight: 600; }
 
 header {
   text-align: center;
@@ -22,17 +30,21 @@ header {
     padding-top: 10px; }
   header hr {
     width: 30%; }
-  header .fa-star {
-    font-size: 28px; }
 
-.white-line {
+i.fa-star {
+  font-size: 28px; }
+
+.white-line, .bluish-line {
   width: 100px;
   height: 4px;
   background-color: white;
   display: inline-block;
   margin-bottom: 7px; }
 
-.container-fluid {
+.bluish-line {
+  background-color: #2c3e50; }
+
+.bc-greenish {
   background-color: #18bc9c; }
 
 .navbar-dark .navbar-toggler {
@@ -41,10 +53,66 @@ header {
 .navbar-toggler-icon::before {
   content: "MENU";
   margin-left: -93px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: white; }
 
 .navbar-toggler-icon {
   margin-left: 55px;
   padding-top: 4px; }
+
+section {
+  text-align: center; }
+
+h2 {
+  color: #2c3e50;
+  font-weight: 900;
+  font-size: 20px;
+  margin: auto; }
+
+#portfolio img {
+  height: 100%;
+  margin-bottom: 15px; }
+
+#about {
+  color: white; }
+  #about h2 {
+    color: white; }
+  #about button {
+    display: block;
+    margin: auto;
+    background-color: #18bc9c;
+    border: 1px solid white;
+    color: white; }
+  #about .fa-info {
+    color: white;
+    padding-right: 5px; }
+  #about i {
+    padding-right: 8px; }
+
+#contact {
+  text-align: left; }
+  #contact button {
+    background-color: #18bc9c;
+    border: 1px solid white; }
+  #contact .form-control {
+    border-color: white;
+    border-bottom-color: #ced4da;
+    color: #495057; }
+  #contact label {
+    font-weight: 900;
+    color: #18bc9c; }
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center; }
+  footer i {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 34px !important; }
 
 /*# sourceMappingURL=main.css.map */

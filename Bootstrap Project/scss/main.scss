@@ -1,6 +1,6 @@
 $greenish: #18bc9c;
 $blueish: #2c3e50;
-
+$input-text:#495057;
 * {
    font-family: 'Lato', sans-serif;
 }
@@ -11,6 +11,16 @@ nav {
         color: white !important;
     }
     
+    i {
+        color: white;
+        font-size: 14px !important;
+    }
+    span {
+        font-size: 14px;
+    color: white;
+    line-height: 24px;
+    font-weight: 600;
+    }
 }
 
 header {
@@ -38,9 +48,11 @@ header {
         width: 30%;
 
     }
-   .fa-star {
-        font-size: 28px;
-    }
+   
+}
+
+i.fa-star {
+    font-size: 28px;
 }
 
 .white-line {
@@ -51,7 +63,12 @@ header {
     margin-bottom: 7px;
 }
 
-.container-fluid {
+.bluish-line {
+    @extend .white-line;
+    background-color: $blueish;
+}
+
+.bc-greenish {
     background-color: $greenish;
 }
 
@@ -60,15 +77,11 @@ header {
     background-color: $greenish;
 }
 
-
-//   .navbar-light .navbar-toggler-icon {
-//     background-image: url(data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://ww…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E);
-// }
-
 .navbar-toggler-icon::before { 
     content: "MENU";
     margin-left: -93px;
     font-weight: bold;
+    color: white;
    
 }
 
@@ -76,4 +89,88 @@ header {
     margin-left: 55px;
     padding-top: 4px;
 }
+
+section {
+    text-align: center;
+}
+
+h2 {
+    color: $blueish;
+    font-weight: 900;
+    font-size: 20px;
+    margin: auto;
+}
+
+#portfolio {
+    img {
+        height: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+#about {
+
+    color: white;
+
+   h2 {
+       color: white;
+   }
+
+   button {
+       display: block;
+       margin: auto;
+       background-color: $greenish;
+       border: 1px solid white;
+       color: white;
+
+       
+   }
+
+   .fa-info { 
+       color: white;
+       padding-right: 5px;
+    }
+
+    i {
+        padding-right: 8px;
+    }
+
+   
+}
+
+#contact {
+    text-align: left;
+
+    button {
+        background-color: $greenish;
+        border: 1px solid white;
+    }
+
+    .form-control {
+        border-color: white;
+        border-bottom-color: #ced4da;
+        color: $input-text;
+    }
+    
+    label {
+        font-weight: 900;
+        color: $greenish;
+    }
+}
+
+footer {
+    background-color: $blueish;
+    color: white;
+    text-align: center;
+    i {
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 34px !important;
+    }
+}
+
 
