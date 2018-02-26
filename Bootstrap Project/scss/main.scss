@@ -2,7 +2,7 @@ $greenish: #18bc9c;
 $blueish: #2c3e50;
 $input-text:#495057;
 * {
-   font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 nav {
@@ -10,45 +10,41 @@ nav {
     a {
         color: white !important;
     }
-    
+    a:hover {
+        color: #d4c5c5 !important;
+    }
     i {
         color: white;
         font-size: 14px !important;
     }
     span {
         font-size: 14px;
-    color: white;
-    line-height: 24px;
-    font-weight: 600;
+        color: white;
+        line-height: 24px;
+        font-weight: 600;
     }
 }
 
 header {
     text-align: center;
     color: white;
-
     img {
         padding-top: 35px;
     }
-
     h1 {
         font-size: 23px;
         font-weight: 900;
         padding-top: 20px;
     }
-    
     h3 {
         font-size: 16px;
         font-weight: bold;
         padding-bottom: 35px;
         padding-top: 10px;
     }
-
     hr {
         width: 30%;
-
     }
-   
 }
 
 i.fa-star {
@@ -73,16 +69,14 @@ i.fa-star {
 }
 
 .navbar-dark .navbar-toggler {
-
     background-color: $greenish;
 }
 
-.navbar-toggler-icon::before { 
+.navbar-toggler-icon::before {
     content: "MENU";
     margin-left: -93px;
     font-weight: bold;
     color: white;
-   
 }
 
 .navbar-toggler-icon {
@@ -92,6 +86,7 @@ i.fa-star {
 
 section {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 h2 {
@@ -106,55 +101,83 @@ h2 {
         height: 100%;
         margin-bottom: 15px;
     }
+    h2 {
+        padding-top: 40px;
+    }
+    i.fa-star {
+        padding-bottom: 15px;
+    }
 }
 
 #about {
-
     color: white;
-
-   h2 {
-       color: white;
-   }
-
-   button {
-       display: block;
-       margin: auto;
-       background-color: $greenish;
-       border: 1px solid white;
-       color: white;
-
-       
-   }
-
-   .fa-info { 
-       color: white;
-       padding-right: 5px;
+    h2 {
+        color: white;
     }
-
+    button {
+        display: block;
+        margin: auto;
+        background-color: $greenish;
+        border: 1px solid white;
+        color: white;
+    }
+    button:hover {
+        background-color: white;
+        color: $greenish;
+        border-color: $greenish;
+    }
+    .fa-info {
+        color: white;
+        padding-right: 5px;
+    }
     i {
         padding-right: 8px;
     }
-
-   
+    h2 {
+        padding-top: 40px;
+    }
+    i.fa-star {
+        padding-bottom: 15px;
+    }
 }
 
 #contact {
     text-align: left;
-
     button {
         background-color: $greenish;
         border: 1px solid white;
     }
-
+    button:hover {
+        background-color: white;
+        color: $greenish;
+        border-color: $greenish;
+    }
     .form-control {
         border-color: white;
         border-bottom-color: #ced4da;
         color: $input-text;
+        margin-top: -15px;
     }
-    
     label {
         font-weight: 900;
-        color: $greenish;
+        color: #8d969e;
+        margin-top: 30px;
+    }
+    i {
+        color: $blueish;
+    }
+    h2 {
+        padding-top: 40px;
+    }
+    i.fa-star {
+        padding-bottom: 15px;
+    }
+    textarea {
+        padding: 40px 0;
+    }
+    
+    .form-control:focus {
+        box-shadow: 0 0 0 0 rgba(0,123,255,.25);
     }
 }
 
@@ -170,7 +193,24 @@ footer {
         text-align: center;
         vertical-align: middle;
         line-height: 34px !important;
+        color: white;
+    }
+
+    i:hover {
+        background-color: white;
+        color: $blueish;
+    }
+    h3 {
+        padding-top: 40px;
+        font-weight: 900;
+        padding-bottom: 20px;
+    }
+
+    .margin-top-p {
+        margin-top: 70px;
+    }
+
+    span {
+        color: #666367;
     }
 }
-
-
