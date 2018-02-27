@@ -1,3 +1,7 @@
+body {
+    background-color: #acacac;
+}
+
 .black {
     background-color: black;
     color: white;
@@ -13,7 +17,20 @@
 }
 
 .active {
-    background-color:grey;
+    background-color:red;
     color: black;
 }
 
+.row img {
+    margin-bottom: 50px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+img {
+    border: 5px solid black;
+}
+
+.selected {
+   border: 5px solid red; 
+}
