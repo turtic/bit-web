@@ -46,14 +46,14 @@ var storage = localStorage;
 
 var storePassedData = function (key, value) {
 
-   return storage.setItem(key, value);
+    return storage.setItem(key, value);
 
 }
 
 var readPassedData = function (key) {
-if (storage.getItem(key) == null) {
-    return console.log("There is no data");
-}
+    if (storage.getItem(key) == null) {
+        return console.log("There is no data");
+    }
 
     return console.log(storage.getItem(key));
 
@@ -63,7 +63,52 @@ var removeData = function (key) {
     if (storage.getItem(key) == null) {
         return console.log("There is no data");
     }
-    
-        return console.log(storage.removeItem(key));
-    
-    }
+
+    return console.log(storage.removeItem(key));
+
+}
+
+//     window.history
+// Play around with the browser forward/back navigation.
+// Implement a function that navigates two pages back.
+
+var ourBack = function () {
+    history.back()
+}
+
+
+
+var ourForward = function () {
+    history.forward()
+}
+
+// setTimeout(ourForward, 5000);
+
+
+var goForward = function (n) {
+    history.go(n)
+}
+
+var myAlert = function (n) {
+    window.alert(n)
+}
+
+// Create a function that shows the user a greeting message using alert
+// Then a question is presented to the user using prompt
+// When the user provides the answer, that answer is used in the confirm dialog
+// The format of the message in the dialog should be: "We will submit this answer now! " + the answer
+// If the user clicks OK, show alert with success message
+// If the user clicks Cancel, don't show anything
+
+var ourTest = function () {
+
+    window.alert("Hello Stevane!");
+
+    var result = prompt("How are you?");
+
+    window.confirm("We will submit this answer now! " + result);
+
+    if (window.confirm) {
+        window.alert("Success");
+    } 
+}

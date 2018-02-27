@@ -1,0 +1,19 @@
+.black {
+    background-color: black;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.active {
+    background-color:grey;
+    color: black;
+}
+
