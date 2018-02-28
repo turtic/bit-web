@@ -1,0 +1,62 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .blue {
+            background-color: blue;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> HTML</h1>
+
+    <button value="Click me" onclick="change()" type="button">Click me</button>
+
+    <button id="on-off" value="off" onclick="switch1()" type="button">Turn ON</button>
+
+</body>
+
+<script>
+    var a;
+    var change = function () {
+
+        // document.querySelector('body').setAttribute('style', 'background-color: blue;');
+
+
+        document.querySelector('body').classList.toggle("blue")
+
+    }
+
+    var switch1 = function () {
+
+  
+        var currentvalue = document.getElementById('on-off').value;
+
+        if (currentvalue == "off") {
+            a= setInterval(change, 2000);
+            
+            document.getElementById("on-off").value = "on";
+            document.getElementById("on-off").innerHTML = "Turn off"
+        } else {
+            clearInterval(a);
+            document.getElementById("on-off").value = "off";
+            document.getElementById("on-off").innerHTML = "Turn on";
+            
+        }
+
+
+    }
+
+</script>
+
+</html>

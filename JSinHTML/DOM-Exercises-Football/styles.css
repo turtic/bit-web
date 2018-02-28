@@ -1,0 +1,24 @@
+body {
+    background-image: url('field.png');
+    background-size: cover;
+    border: 2px solid red;
+    height: 100vh; 
+   
+}
+
+img {
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    border: 2px solid red;
+}
+
+h2 {
+    height: 100%;
+}
+
+/* #demo {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+} */
