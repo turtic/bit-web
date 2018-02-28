@@ -1,0 +1,36 @@
+body {
+    background-color: #acacac;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.active {
+    background-color:red;
+    color: black;
+}
+
+.row img {
+    margin-bottom: 50px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+img {
+    border: 5px solid black;
+}
+
+.selected {
+   border: 5px solid red; 
+}

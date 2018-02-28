@@ -1,24 +1,23 @@
+
+
+
 var test = function () {
 
+    var a = document.querySelector('li');
 
-    var a = document.getElementsByClassName('active')[0].parentElement.parentElement.previousElementSibling.firstElementChild.firstElementChild
-    var b = document.getElementsByClassName('active');
+    var message= a.textContent; 
 
-    b[0].className = ' ';
-    a.className = 'active';
-    
+    alert(a.textContent);
+
 
 }
 
-var test1 = function () {
+var test1 = function (message) {
 
+    var x = document.querySelector('ul').lastElementChild;
 
-    var a = document.getElementsByClassName('selected')[0].parentElement.nextElementSibling.firstElementChild.nextElementSibling;
-    var b = document.getElementsByClassName('selected');
+    x.textContent = message; 
 
-    b[0].className = 'col-4';
-    a.className = 'col-4 selected';
-    
 
 }
 
@@ -42,9 +41,24 @@ var test1 = function () {
 
 
 
+// var test = function () {
 
+//     var a = document.getElementsByClassName('active')[0].parentElement.parentElement.previousElementSibling.firstElementChild.firstElementChild
+//     var b = document.getElementsByClassName('active');
 
+//     b[0].className = ' ';
+//     a.className = 'active';
+// }
 
+// var test1 = function () {
+
+//     var a = document.getElementsByClassName('selected')[0].parentElement.nextElementSibling.firstElementChild.nextElementSibling;
+//     var b = document.getElementsByClassName('selected');
+
+//     b[0].className = 'col-4';
+//     a.className = 'col-4 selected';
+
+// }
 
 
 // var changeClass = function (ourClass) {
