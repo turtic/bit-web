@@ -7,21 +7,12 @@ body {
     background-color: #0212fe;
 }
 
-#mario {
+#mario, #mario2 {
     vertical-align: middle;
     border-style: none;
     position: absolute;
     bottom: 83px;
-    right: 38%;
-    height: 120px;
-}
-
-#mario2 {
-    vertical-align: middle;
-    border-style: none;
-    position: absolute;
-    bottom: 83px;
-    right: 38%;
+    right: 45%;
     height: 120px;
 }
 

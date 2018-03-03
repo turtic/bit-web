@@ -31,6 +31,7 @@
 
 </body>
 <script>
+    var myVar;
 
     document.querySelector('body').addEventListener('keydown', function (e) {
 
@@ -46,10 +47,22 @@
         //         document.getElementById("mario").setAttribute("src", "mario.png")
         //     }
 
-
+        var start = 0
         if (event.key === 'ArrowRight') {
             document.getElementById("mario").setAttribute("class", "none");
             document.getElementById("mario2").setAttribute("class", "");
+
+            var plsMove = function () {
+
+                start = start - 30;
+                var move = 'background-position-x:' + start + 'px';
+                document.querySelector("body").setAttribute("style", move);
+
+            }
+            clearInterval(myVar);
+            myVar = setInterval(function () { plsMove() }, 1);
+
+
         }
 
     });
@@ -59,6 +72,9 @@
         if (event.key === 'ArrowRight') {
             document.getElementById("mario2").setAttribute("class", "none");
             document.getElementById("mario").setAttribute("class", "");
+
+            clearInterval(myVar);
+
         }
 
     });
