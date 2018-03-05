@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+<script>
+
+    var a = ['http://via.placeholder.com/350x150',
+        'http://via.placeholder.com/250x150',
+        'http://via.placeholder.com/350x280',
+        'http://via.placeholder.com/550x150',
+        'http://via.placeholder.com/450x110',
+        'http://via.placeholder.com/360x150'];
+
+
+    for (var i = 0; i < a.length; i++) {
+        var image = $('<img>');
+        $('body').prepend(image);
+    }
+
+
+    $('img').css('float', 'left');
+
+
+    $("img").each(function (index, element) {
+
+        $(element).attr("src", a[index]);
+
+        $(element).attr("height", Math.floor((Math.random() * 300) + 100));
+
+        $(element).attr("width", Math.floor((Math.random() * 300) + 100));
+
+    });
+
+
+
+</script>
+
+</html>

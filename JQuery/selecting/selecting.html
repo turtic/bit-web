@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <ul>
+        <a href="" class="active">
+            <li>Home</li>
+        </a>
+        <a href="">
+            <li>About</li>
+        </a>
+        <a href="">
+            <li>Contact</li>
+        </a>
+        <a href="">
+            <li>Portfolio</li>
+        </a>
+        <a href="">
+            <li>Testimonials</li>
+        </a>
+    </ul>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+<script>
+
+    $(document).ready(function () {
+        console.log("Hello, World!")
+    });
+
+    $(function () {
+        console.log("Hello, World!")
+    });
+
+    $("li").eq(0).css("border-bottom", "1px solid red");
+
+    $(".active").css("color", "black");
+
+    $("li").css("text-transform", "uppercase");
+
+    $("li:active").css("color", "black");
+
+    $("li").eq($("li").length / 2 - 0.5).css("background-color", "yellow");
+
+
+    // var mid = "li:nth-of-type(" + Math.ceil($("li").length / 2) + ")";
+
+    // $(mid).css("background-color", "red");
+
+
+
+// Math.floor($("li").length / 2)
+
+
+
+
+</script>
+
+</html>
