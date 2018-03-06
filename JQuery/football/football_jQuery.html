@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PES</title>
+
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        div {
+            background-image: url('field.png');
+            position: relative;
+
+
+
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #player {
+            width: 100px;
+            position: absolute;
+            transition: all 0.8s;
+        }
+
+        button {
+            position: absolute;
+            bottom: 27px;
+            right: 27px;
+            padding: 14px 33px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="player" src="player.png" alt="">
+        <button>STOP</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        // document.querySelector('div').addEventListener('click', function (e) {
+        //     document.querySelector('#player').style.left = e.clientX - 50 + 'px';
+        //     document.querySelector('#player').style.top = e.clientY - 50 + 'px';
+        // })
+
+        $('#player').css('top', $(window).height()/2 -  50 + "px" );
+        $('#player').css('left', $(window).width()/2 - 50 + "px" )
+        
+        
+
+        $('div').on('click', function (event) {
+
+            var x = event.pageX - 50;
+            var y = event.pageY - 50;
+            $('#player').css('top', y + 'px')
+            $('#player').css('left', x + 'px')
+        });
+
+        var z = 2;
+
+        $("button").click(function () {
+            z++;
+            if (z % 2 == 0) {
+                $('button').text('STOP');
+                $('div').on('click', function (event) {
+                    var x = event.pageX - 50;
+                    var y = event.pageY - 50;
+                    $('#player').css('top', y + 'px')
+                    $('#player').css('left', x + 'px')
+                });
+            } else {
+                $('button').text('START');
+                $("div").off("click");
+            }
+        });
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
