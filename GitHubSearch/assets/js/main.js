@@ -1,11 +1,10 @@
-// https://api.github.com/search/users?q=stefansavic89
 
 $(document).keypress(function (e) {
     if (e.keyCode == 13) {
         e.preventDefault();
 
         let gitHubAPI = 'https://api.github.com/search/users?q=';
-        let inputValue = $('search-input').val();
+        let inputValue = $('#search-input').val();
         let searchName = gitHubAPI + inputValue;
 
         var request = $.ajax({
@@ -14,12 +13,15 @@ $(document).keypress(function (e) {
         });
 
         request.done(function (response) {
-            console.log(response);
-            console.log(response.items);
 
-            for (let i = 10; i < 16; i++) {
-                a = response.items[i].login + ' ' + response.items[i].avatar_url
-                console.log(a);
+
+            for (let i = 1; i < 7; i++) {
+
+                userName = response.items[i].login;
+                userImage = response.items[i].avatar_url
+                $('#person' + i + ' h5').text(userName);
+                $('#person' + i + ' img').attr( "src", userImage );
+
             }
         });
 
