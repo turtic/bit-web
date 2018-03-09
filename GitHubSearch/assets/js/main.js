@@ -1,4 +1,3 @@
-
 $(document).keypress(function (e) {
     if (e.keyCode == 13) {
         e.preventDefault();
@@ -15,12 +14,12 @@ $(document).keypress(function (e) {
         request.done(function (response) {
 
 
-            for (let i = 1; i < 7; i++) {
+            for (let i = 0; i < 6; i++) {
 
                 userName = response.items[i].login;
                 userImage = response.items[i].avatar_url
-                $('#person' + i + ' h5').text(userName);
-                $('#person' + i + ' img').attr( "src", userImage );
+                $('#person' + (i + 1) + ' h5').text(userName);
+                $('#person' + (i + 1) + ' img').attr("src", userImage);
 
             }
         });
