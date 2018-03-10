@@ -1,45 +1,31 @@
 var dataModule = (function () {
 
 
-    class TVshows {
-
-        constructor() {
-            this.shows = [];
-            this.limit = 50;
-        }
+    let TVshows = {
+        shows: [],
+        limit: 50
     }
 
 
+    
     class Show {
 
-        constructor(name, image, id, ) {
+        constructor(name, image, id, summary) {
             this.name = name;
             this.image = image;
             this.id = id;
-            this.seasons = seasons;
-            this.casts = casts;
-            this.details = details;
+            this.summary = summary;
+            // this.seasons = seasons;
+            // this.casts = casts;
+            
         }
 
-        getName(){
+        getName() {
             return name;
         }
     }
 
-    const req = $get(url);
-    let tvShows = [];
 
-    req.done(function(data){
-        data.forEach(currentShow => {
-
-            const show = new Show(currentShow.name, currentShow.image.medium);
-            tvShows.push(show);
-            
-        });
-
-        
-
-    });
 
     class Cast {
 
@@ -59,7 +45,7 @@ var dataModule = (function () {
 
     return {
         TVshows: TVshows,
-        Movie: Movie,
+        Show: Show,
         Cast: Cast,
         Season: Season
     }

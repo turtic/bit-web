@@ -28,8 +28,10 @@
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-
+                <input id="search-input" list="searchShows" class="form-control mr-sm-2" placeholder="Search" aria-label="Search" autocomplete="off">
+                <datalist id="searchShows">
+                
+                </datalist>
             </form>
         </div>
     </nav>
@@ -170,7 +172,7 @@
 
 
     <script src="assets/js/dataModule.js"></script>
-    <script src="assets/js/UIModule.js"></script>
+    <!-- <script src="assets/js/UIModule.js"></script> -->
     <script src="assets/js/mainModule.js"></script>
 
 </body>
